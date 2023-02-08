@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+</head>
+<body>
+    <center>
+        <h1>Counter</h1>
+            <h2>{{session['visited']}} times</h2>
+            <a class="red_button" href="/count"><button>Add two times!!</button></a>
+            <a class="reset_button" href="/destroy_session"><button>RESET</button></a>
+    </center>
+</body>
+</html>
